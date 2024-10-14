@@ -69,6 +69,8 @@ void MX_DMA_Init(void);
 void MX_LPUART1_UART_Init(void);
 void MX_ADC1_Init(void);
 void MX_TIM3_Init(void);
+void MX_TIM4_Init(void);
+void MX_TIM8_Init(void);
 
 /* USER CODE BEGIN EFP */
 
@@ -84,6 +86,20 @@ void MX_TIM3_Init(void);
 #define LPUART1_RX_GPIO_Port GPIOA
 #define LD2_Pin LL_GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
+#define Q_A_Pin LL_GPIO_PIN_6
+#define Q_A_GPIO_Port GPIOA
+#define Q_B_Pin LL_GPIO_PIN_7
+#define Q_B_GPIO_Port GPIOA
+#define Phase_A_Pin LL_GPIO_PIN_4
+#define Phase_A_GPIO_Port GPIOC
+#define Phase_A_EXTI_IRQn EXTI4_IRQn
+#define Read_A_Pin LL_GPIO_PIN_7
+#define Read_A_GPIO_Port GPIOC
+#define Read_B_Pin LL_GPIO_PIN_9
+#define Read_B_GPIO_Port GPIOA
+#define Phase_B_Pin LL_GPIO_PIN_10
+#define Phase_B_GPIO_Port GPIOA
+#define Phase_B_EXTI_IRQn EXTI15_10_IRQn
 #define T_SWDIO_Pin LL_GPIO_PIN_13
 #define T_SWDIO_GPIO_Port GPIOA
 #define T_SWCLK_Pin LL_GPIO_PIN_14
