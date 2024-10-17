@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_READ'.
  *
- * Model version                  : 1.1
+ * Model version                  : 1.2
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Sun Oct 13 23:02:46 2024
+ * C/C++ source code generated on : Wed Oct 16 15:03:40 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -89,10 +89,10 @@ void QEI_READ_initialize(void)
   QEI_READ_M->Timing.stepSize0 = 0.01;
 
   /* External mode info */
-  QEI_READ_M->Sizes.checksums[0] = (3797034576U);
-  QEI_READ_M->Sizes.checksums[1] = (2474305837U);
-  QEI_READ_M->Sizes.checksums[2] = (3662001017U);
-  QEI_READ_M->Sizes.checksums[3] = (3972047826U);
+  QEI_READ_M->Sizes.checksums[0] = (258308877U);
+  QEI_READ_M->Sizes.checksums[1] = (1193424423U);
+  QEI_READ_M->Sizes.checksums[2] = (757401186U);
+  QEI_READ_M->Sizes.checksums[3] = (2746882428U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;

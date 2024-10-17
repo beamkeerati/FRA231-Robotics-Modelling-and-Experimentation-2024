@@ -302,3 +302,18 @@ java.lang.Exception: The project description file (.project) for 'BasicKit' is m
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-10-12 17:55:06.899
 !MESSAGE Indexed 'BasicTest' (58 sources, 141 headers) in 7.57 sec: 13,773 declarations; 88,116 references; 8 unresolved inclusions; 1,654 syntax errors; 4,292 unresolved names (4%)
+!SESSION 2567-10-16 15:14:16.783 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2567-10-16 15:14:46.802
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2567-10-16 15:14:46.810
+!MESSAGE Log4j2 initialized with config file C:\Users\beamk\OneDrive\All Drive\KMUTT\Teacher Assistance\TA RMX\FRA231-Robotics-Modelling-and-Experimentation-2024\Lab1.1_Example\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2567-10-16 15:14:55.437
+!MESSAGE Started RMI Server, listening on port 41337

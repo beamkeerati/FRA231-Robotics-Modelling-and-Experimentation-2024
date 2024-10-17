@@ -2,7 +2,7 @@
 ## Makefile generated for component 'QEI_READ'. 
 ## 
 ## Makefile     : QEI_READ.mk
-## Generated on : Sun Oct 13 23:03:25 2024
+## Generated on : Wed Oct 16 15:03:45 2024
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/QEI_READ.elf
 ## Product type : executable
 ## 
@@ -223,7 +223,7 @@ DEFINES = $(DEFINES_) $(DEFINES_BUILD_ARGS) $(DEFINES_CUSTOM) $(DEFINES_OPTS) $(
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_timer_ll.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c $(START_DIR)/QEI_READ_ert_rtw/QEI_READ.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/rtiostream_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_usart.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_lpuart.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arch.c $(START_DIR)/QEI_READ/Core/Src/main.c $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_it.c $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_hal_msp.c $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_hal_timebase_tim.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c $(START_DIR)/QEI_READ/Core/Src/system_stm32g4xx.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
+SRCS = C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_timer_ll.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_mode.c $(START_DIR)/QEI_READ_ert_rtw/QEI_READ.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_common.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_classic_trigger.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_standard.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_daq.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/protocol/src/xcp_calibration.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_fifo.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_transport.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_mem_default.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/platform/default/xcp_drv_rtiostream.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/common/xcp_utils.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/server/transport/src/xcp_frame_serial.c $(MATLAB_ROOT)/toolbox/coder/xcp/src/target/ext_mode/src/xcp_ext_param_default_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/overrideHALDelay.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/platform_timer.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/SysTickScheduler.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/scheduler/src/m3m4m4f_multitasking.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/rtiostream_serial.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_usart.c C:/ProgramData/MATLAB/SupportPackages/R2024b/toolbox/shared/supportpackages/stm32/src/stm_lpuart.c $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arch.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/main.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_it.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_hal_msp.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_hal_timebase_tim.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/system_stm32g4xx.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Core/syscalls.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Core/sysmem.c $(START_DIR)/QEI_READ/STM32CubeIDE/Application/User/Startup/startup_stm32g474retx.s
 
 MAIN_SRC = $(START_DIR)/QEI_READ_ert_rtw/ert_main.c
 
@@ -838,115 +838,115 @@ sys_arch.o : $(MATLAB_ROOT)/toolbox/target/shared/armcortexmbase/xcp/src/sys_arc
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-main.o : $(START_DIR)/QEI_READ/Core/Src/main.c
+main.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/main.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_it.o : $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_it.c
+stm32g4xx_it.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_it.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_msp.o : $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_hal_msp.c
+stm32g4xx_hal_msp.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_hal_msp.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_timebase_tim.o : $(START_DIR)/QEI_READ/Core/Src/stm32g4xx_hal_timebase_tim.c
+stm32g4xx_hal_timebase_tim.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/stm32g4xx_hal_timebase_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_utils.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c
+stm32g4xx_ll_utils.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_utils.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_exti.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c
+stm32g4xx_ll_exti.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_gpio.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c
+stm32g4xx_ll_gpio.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_dma.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c
+stm32g4xx_ll_dma.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_lpuart.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c
+stm32g4xx_ll_lpuart.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_lpuart.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_rcc.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c
+stm32g4xx_ll_rcc.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_pwr.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c
+stm32g4xx_ll_pwr.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
+stm32g4xx_hal.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_rcc.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
+stm32g4xx_hal_rcc.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_rcc_ex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
+stm32g4xx_hal_rcc_ex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
+stm32g4xx_hal_flash.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash_ex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
+stm32g4xx_hal_flash_ex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_flash_ramfunc.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
+stm32g4xx_hal_flash_ramfunc.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_gpio.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
+stm32g4xx_hal_gpio.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_exti.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
+stm32g4xx_hal_exti.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_exti.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_dma.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
+stm32g4xx_hal_dma.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_dma_ex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
+stm32g4xx_hal_dma_ex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_pwr.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
+stm32g4xx_hal_pwr.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_pwr_ex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
+stm32g4xx_hal_pwr_ex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_cortex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
+stm32g4xx_hal_cortex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_tim.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
+stm32g4xx_hal_tim.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_hal_tim_ex.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
+stm32g4xx_hal_tim_ex.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-stm32g4xx_ll_tim.o : $(START_DIR)/QEI_READ/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c
+stm32g4xx_ll_tim.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 
-system_stm32g4xx.o : $(START_DIR)/QEI_READ/Core/Src/system_stm32g4xx.c
+system_stm32g4xx.o : C:/Users/beamk/OneDrive/ALLDRI~1/KMUTT/TEACHE~1/TARMX~1/FRA231-Robotics-Modelling-and-Experimentation-2024/Lab1.1_Example/Test/Core/Src/system_stm32g4xx.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

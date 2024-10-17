@@ -3,7 +3,7 @@ project toolchain STM32CubeIDE
 
 SetStructure Advanced
 
-project setCustomFWPath "C:\Users\beamk\STM32Cube\Repository\STM32Cube_FW_G4_V1.6.0"
+project setCustomFWPath "C:\Users\beamk\STM32Cube\Repository\STM32Cube_FW_G4_V1.6.1"
 
 project generate 
 

@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI_READ'.
  *
- * Model version                  : 1.1
+ * Model version                  : 1.2
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Sun Oct 13 23:02:46 2024
+ * C/C++ source code generated on : Wed Oct 16 15:03:40 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
