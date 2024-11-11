@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'QEI'.
  *
- * Model version                  : 1.29
+ * Model version                  : 1.30
  * Simulink Coder version         : 24.2 (R2024b) 21-Jun-2024
- * C/C++ source code generated on : Wed Oct 16 17:00:20 2024
+ * C/C++ source code generated on : Tue Oct 22 05:29:25 2024
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: ARM Compatible->ARM Cortex-M
@@ -165,10 +165,10 @@ void QEI_step(void)
    *  DataTypeConversion: '<Root>/Cast To Double'
    */
   QEI_B.diff_count = (real_T)QEI_B.qei4 - QEI_DW.prev_count;
-  if (QEI_B.diff_count > 32768.0) {
-    QEI_B.diff_count -= 65536.0;
-  } else if (QEI_B.diff_count < -32768.0) {
-    QEI_B.diff_count += 65536.0;
+  if (QEI_B.diff_count > 30991.5) {
+    QEI_B.diff_count -= 61983.0;
+  } else if (QEI_B.diff_count < -30991.5) {
+    QEI_B.diff_count += 61983.0;
   }
 
   QEI_DW.pulses_accum += QEI_B.diff_count;
@@ -335,10 +335,10 @@ void QEI_initialize(void)
   QEI_M->Timing.stepSize0 = 0.01;
 
   /* External mode info */
-  QEI_M->Sizes.checksums[0] = (242350908U);
-  QEI_M->Sizes.checksums[1] = (2976111582U);
-  QEI_M->Sizes.checksums[2] = (225389017U);
-  QEI_M->Sizes.checksums[3] = (3006838959U);
+  QEI_M->Sizes.checksums[0] = (2455031770U);
+  QEI_M->Sizes.checksums[1] = (1664927318U);
+  QEI_M->Sizes.checksums[2] = (2592568479U);
+  QEI_M->Sizes.checksums[3] = (3462625168U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
