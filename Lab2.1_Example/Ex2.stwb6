@@ -2020,13 +2020,13 @@
     },
     "bridges": []
   },
-  "version": 13,
+  "version": 10,
   "workBenchVersion": "6.3.2",
   "workBenchVersionFileCreation": "6.3.2",
   "details": {
     "steps": {
       "powerSupply_0": {
-        "nominalDcBusVoltage": 12,
+        "nominalDcBusVoltage": 12.1,
         "nominalCurrent": 15,
         "maxCurrent_pk": "Number.NaN",
         "icl": {
@@ -2046,7 +2046,7 @@
         "ls": "Number.NaN",
         "mmsLd_lq_ratio": "Number.NaN",
         "maxCurrent": 15,
-        "maxDCVoltage": 12,
+        "maxDCVoltage": 12.1,
         "BEmfConstant": "Number.NaN",
         "inertia": "Number.NaN",
         "friction": "Number.NaN",
@@ -2060,7 +2060,9 @@
         "quadratureEncoder": {
           "pulsesPerMechanicalRevolution": "Number.NaN",
           "hasIndexPin": false
-        }
+        },
+        "nominalCurrent": "Number.NaN",
+        "nominalDCVoltage": "Number.NaN"
       },
       "powerSwitches_0": {
         "setting": {

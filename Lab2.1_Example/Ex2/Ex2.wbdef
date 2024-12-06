@@ -90,26 +90,26 @@
         <define key="M1_OV_TEMPERATURE_PROT_ENABLING" value="ENABLE" />
         <define key="M1_OV_TEMPERATURE_THRESHOLD_C" value="110" />
         <define key="M1_OV_VOLTAGE_PROT_ENABLING" value="ENABLE" />
-        <define key="M1_OV_VOLTAGE_THRESHOLD_V" value="14" />
-        <define key="M1_OVP_THRESHOLD_HIGH" value="14" />
+        <define key="M1_OV_VOLTAGE_THRESHOLD_V" value="15" />
+        <define key="M1_OVP_THRESHOLD_HIGH" value="15" />
         <define key="M1_PHASE1_DURATION" value="500" />
         <define key="M1_PHASE1_FINAL_SPEED_RPM" value="0" />
-        <define key="M1_PHASE1_VOLTAGE_RMS" value="0.68" />
+        <define key="M1_PHASE1_VOLTAGE_RMS" value="0.69" />
         <define key="M1_PHASE2_DURATION" value="1000" />
         <define key="M1_PHASE2_FINAL_SPEED_RPM" value="1480" />
-        <define key="M1_PHASE2_VOLTAGE_RMS" value="4.61" />
+        <define key="M1_PHASE2_VOLTAGE_RMS" value="4.63" />
         <define key="M1_PHASE3_DURATION" value="500" />
         <define key="M1_PHASE3_FINAL_SPEED_RPM" value="1480" />
-        <define key="M1_PHASE3_VOLTAGE_RMS" value="4.61" />
+        <define key="M1_PHASE3_VOLTAGE_RMS" value="4.63" />
         <define key="M1_PHASE4_DURATION" value="0" />
         <define key="M1_PHASE4_FINAL_SPEED_RPM" value="0" />
-        <define key="M1_PHASE4_VOLTAGE_RMS" value="0.68" />
+        <define key="M1_PHASE4_VOLTAGE_RMS" value="0.69" />
         <define key="M1_PHASE5_DURATION" value="0" />
         <define key="M1_PHASE5_FINAL_SPEED_RPM" value="0" />
-        <define key="M1_PHASE5_VOLTAGE_RMS" value="0.68" />
+        <define key="M1_PHASE5_VOLTAGE_RMS" value="0.69" />
         <define key="M1_PID_SPEED_KD_DEFAULT" value="0" />
         <define key="M1_PID_SPEED_KI_DEFAULT" value="1" />
-        <define key="M1_PID_SPEED_KP_DEFAULT" value="1443" />
+        <define key="M1_PID_SPEED_KP_DEFAULT" value="1431" />
         <define key="M1_POLE_PAIR_NUM" value="7" />
         <define key="M1_POTENTIOMETER_ENABLE" value="FALSE" />
         <define key="M1_POWERBOARD_NAME" value="X-NUCLEO-IHM08M1" />

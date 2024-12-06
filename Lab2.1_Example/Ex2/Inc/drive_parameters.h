@@ -72,7 +72,7 @@
 
 /* Speed control loop */
 #define SPEED_LOOP_FREQUENCY_HZ            (uint16_t)1000 /*!<Execution rate of speed regulation loop (Hz) */
-#define PID_SPEED_KP_DEFAULT          1443/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
+#define PID_SPEED_KP_DEFAULT          1431/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 #define PID_SPEED_KI_DEFAULT          1/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 #define PID_SPEED_KD_DEFAULT          0/(SPEED_UNIT/10) /* Workbench compute the gain for 01Hz unit*/
 
@@ -100,7 +100,7 @@
 #define DEFAULT_TARGET_SPEED_UNIT          (DEFAULT_TARGET_SPEED_RPM*SPEED_UNIT/U_RPM)
 
 /**************************    FIRMWARE PROTECTIONS SECTION   *****************/
-#define OV_VOLTAGE_THRESHOLD_V             14 /*!< Over-voltage threshold */
+#define OV_VOLTAGE_THRESHOLD_V             15 /*!< Over-voltage threshold */
 #define UD_VOLTAGE_THRESHOLD_V             10 /*!< Under-voltage threshold */
 #ifdef NOT_IMPLEMENTED
 #define ON_OVER_VOLTAGE                    TURN_OFF_PWM /*!< TURN_OFF_PWM, TURN_ON_R_BRAKE or TURN_ON_LOW_SIDES */
@@ -120,27 +120,27 @@
 /* Phase 1 */
 #define PHASE1_DURATION                    500 /* milliseconds */
 #define PHASE1_FINAL_SPEED_UNIT            (0*SPEED_UNIT/U_RPM)
-#define PHASE1_VOLTAGE_RMS                 0.68
+#define PHASE1_VOLTAGE_RMS                 0.69
 
 /* Phase 2 */
 #define PHASE2_DURATION                    1000 /* milliseconds */
 #define PHASE2_FINAL_SPEED_UNIT            (1480*SPEED_UNIT/U_RPM)
-#define PHASE2_VOLTAGE_RMS                 4.61
+#define PHASE2_VOLTAGE_RMS                 4.63
 
 /* Phase 3 */
 #define PHASE3_DURATION                    500 /* milliseconds */
 #define PHASE3_FINAL_SPEED_UNIT            (1480*SPEED_UNIT/U_RPM)
-#define PHASE3_VOLTAGE_RMS                 4.61
+#define PHASE3_VOLTAGE_RMS                 4.63
 
 /* Phase 4 */
 #define PHASE4_DURATION                    0 /* milliseconds */
 #define PHASE4_FINAL_SPEED_UNIT            (0*SPEED_UNIT/U_RPM)
-#define PHASE4_VOLTAGE_RMS                 0.68
+#define PHASE4_VOLTAGE_RMS                 0.69
 
 /* Phase 5 */
 #define PHASE5_DURATION                    0 /* milliseconds */
 #define PHASE5_FINAL_SPEED_UNIT            (0*SPEED_UNIT/U_RPM)
-#define PHASE5_VOLTAGE_RMS                 0.68
+#define PHASE5_VOLTAGE_RMS                 0.69
 #define ENABLE_SL_ALGO_FROM_PHASE          3
 
 /* Sensor-less rev-up sequence */
