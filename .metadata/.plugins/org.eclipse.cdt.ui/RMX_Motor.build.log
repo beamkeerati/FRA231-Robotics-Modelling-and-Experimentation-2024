@@ -1,10 +1,23 @@
-21:22:23 **** Incremental Build of configuration Debug for project RMX_Motor ****
+15:45:53 **** Build of configuration Debug for project RMX_Motor ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "RMX_Motor.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\beamk\OneDrive\All Drive\KMUTT\Teacher Assistance\TA RMX\FRA231-Robotics-Modelling-and-Experimentation-2024\Lab2.2\RMX_Motor\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RMX_Motor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: RMX_Motor.elf
+ 
 arm-none-eabi-size  RMX_Motor.elf 
+arm-none-eabi-objdump -h -S RMX_Motor.elf  > "RMX_Motor.list"
+arm-none-eabi-objcopy  -O ihex RMX_Motor.elf  "RMX_Motor.hex"
    text	   data	    bss	    dec	    hex	filename
-  49396	    136	   3840	  53372	   d07c	RMX_Motor.elf
+  49424	    136	   3840	  53400	   d098	RMX_Motor.elf
+arm-none-eabi-objcopy  -O binary RMX_Motor.elf  "RMX_Motor.bin"
 Finished building: default.size.stdout
  
+Finished building: RMX_Motor.bin
+Finished building: RMX_Motor.hex
+ 
+ 
+Finished building: RMX_Motor.list
+ 
 
-21:22:23 Build Finished. 0 errors, 0 warnings. (took 370ms)
+15:45:56 Build Finished. 0 errors, 0 warnings. (took 2s.814ms)
 
