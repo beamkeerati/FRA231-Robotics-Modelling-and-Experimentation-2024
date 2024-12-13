@@ -1,25 +1,10 @@
-22:19:14 **** Incremental Build of configuration Debug for project RMX_Motor ****
+23:45:18 **** Incremental Build of configuration Debug for project RMX_Motor ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/RMX_Motor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/RMX_Motor.d" -MT"Core/Src/RMX_Motor.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/RMX_Motor.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/RMX_Motor.c: In function 'RMX_Motor_begin':
-../Core/Src/RMX_Motor.c:36:32: warning: passing argument 2 of 'HAL_ADC_Start_DMA' from incompatible pointer type [-Wincompatible-pointer-types]
-   36 |         HAL_ADC_Start_DMA(ADC, adc_raw, ADC_BUFFER);
-      |                                ^~~~~~~
-      |                                |
-      |                                uint16_t * {aka short unsigned int *}
-In file included from ../Core/Inc/stm32g4xx_hal_conf.h:228,
-                 from ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:29,
-                 from ../Core/Inc/main.h:30,
-                 from ../Core/Inc/RMX_Motor.h:11,
-                 from ../Core/Src/RMX_Motor.c:8:
-../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h:2242:78: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'uint16_t *' {aka 'short unsigned int *'}
- 2242 | HAL_StatusTypeDef       HAL_ADC_Start_DMA(ADC_HandleTypeDef *hadc, uint32_t *pData, uint32_t Length);
-      |                                                                    ~~~~~~~~~~^~~~~
 ../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
 ../Core/Src/main.c:826:25: warning: 'memcpy' reading 4 bytes from a region of size 2 [-Wstringop-overread]
-  826 |                         memcpy(&freq_matlab,       &RxBuffer[22], sizeof(int32_t));//4
-      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  826 |                         memcpy(&freq_matlab, &RxBuffer[22], sizeof(int32_t)); //4
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from ../Core/Src/main.c:24:
 ../Core/Inc/RMX_Motor.h:38:16: note: at offset 22 into source object 'RxBuffer' of size 24
    38 | extern uint8_t RxBuffer[24];
@@ -31,16 +16,16 @@ arm-none-eabi-size  RMX_Motor.elf
 arm-none-eabi-objdump -h -S RMX_Motor.elf  > "RMX_Motor.list"
 arm-none-eabi-objcopy  -O ihex RMX_Motor.elf  "RMX_Motor.hex"
    text	   data	    bss	    dec	    hex	filename
-  49436	    136	   3856	  53428	   d0b4	RMX_Motor.elf
+  44620	     56	   3520	  48196	   bc44	RMX_Motor.elf
 arm-none-eabi-objcopy  -O binary RMX_Motor.elf  "RMX_Motor.bin"
 Finished building: default.size.stdout
  
-Finished building: RMX_Motor.bin
 Finished building: RMX_Motor.hex
+Finished building: RMX_Motor.bin
  
  
 Finished building: RMX_Motor.list
  
 
-22:19:16 Build Finished. 0 errors, 2 warnings. (took 2s.740ms)
+23:45:19 Build Finished. 0 errors, 1 warnings. (took 1s.176ms)
 
